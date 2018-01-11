@@ -3,13 +3,13 @@ import base64, time
 from flask import Flask
 from flask import render_template, request
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def homepage():
     return render_template('index.html')
 
-@app.route('/save_audio', methods=['POST'])
+@application.route('/save_audio', methods=['POST'])
 def save_audio():
     audio_data = request.get_data()
     with open("recordings/audio-record" + str(time.time()) + ".wav", "wb") as fh:
@@ -18,4 +18,4 @@ def save_audio():
     return "OK", 200
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
