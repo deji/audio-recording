@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">        
+    <title>Audio recording site</title>
+</head>
+<body>
+    <script src="/static/audio-recording.js"></script>
+    <h1>Testing audio recording</h1>
+    <button id="record">Start Recording</button>
+    <button id="stop">Stop Recording</button>
+    <div>
+        <audio id="gum-local"></audio>
+    </div>
+    <div id="results"></div>
+    <script>
+        (function() {
+            start();
+        })();
+    </script>
+</body>
+</html>
