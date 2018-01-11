@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fc84a17496a5d7648faaedc7074cde98f98fec526aff8d2a6e2dbb91d78983a2"
+            "sha256": "f6304df98971c39e768f7ad161afec5dfaa6d2927a124538e393a000bbe7a25d"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -59,6 +59,12 @@
                 "sha256:a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
             ],
             "version": "==1.0"
+        },
+        "uwsgi": {
+            "hashes": [
+                "sha256:572ef9696b97595b4f44f6198fe8c06e6f4e6351d930d22e5330b071391272ff"
+            ],
+            "version": "==2.0.15"
         },
         "werkzeug": {
             "hashes": [
